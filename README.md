@@ -1,5 +1,3 @@
-> 本文件是 [预设仓库 README](https://github.com/KEBANJILONG/mc-chat-translator-presets/blob/main/README.md) 的本地副本，仓库里的版本为权威版。
-
 # Chat Translator · 预设目录
 
 本仓库是 **Minecraft 聊天翻译模组（Chat Translator）** 的权威预设目录：语言选项、外接 AI 调用网址、以及各站点可选模型清单。模组每次启动会异步拉取本文件，因此新增语言或模型只需改这里，**无需重新编译或发布模组 jar**。
