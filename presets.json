@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "updated": "2026-11-13",
+  "repository": "https://github.com/KEBANJILONG/mc-chat-translator-presets",
+  "notes": "Authoritative preset catalog for the Chat Translator mod. The mod ships an identical snapshot for offline fallback; edit this file to maintain languages, AI endpoints and per-site model lists.",
+  "target_languages": [
+    { "code": "zh-CN", "name": "简体中文", "name_en": "Chinese (Simplified)" },
+    { "code": "zh-TW", "name": "繁體中文", "name_en": "Chinese (Traditional)" },
+    { "code": "en", "name": "英语", "name_en": "English" },
+    { "code": "ja", "name": "日本語", "name_en": "Japanese" },
+    { "code": "ko", "name": "한국어", "name_en": "Korean" },
+    { "code": "ru", "name": "Русский", "name_en": "Russian" },
+    { "code": "fr", "name": "Français", "name_en": "French" },
+    { "code": "de", "name": "Deutsch", "name_en": "German" },
+    { "code": "es", "name": "Español", "name_en": "Spanish" },
+    { "code": "pt-BR", "name": "Português (Brasil)", "name_en": "Portuguese (Brazil)" },
+    { "code": "it", "name": "Italiano", "name_en": "Italian" },
+    { "code": "ar", "name": "العربية", "name_en": "Arabic" },
+    { "code": "th", "name": "ไทย", "name_en": "Thai" },
+    { "code": "vi", "name": "Tiếng Việt", "name_en": "Vietnamese" },
+    { "code": "id", "name": "Bahasa Indonesia", "name_en": "Indonesian" },
+    { "code": "tr", "name": "Türkçe", "name_en": "Turkish" },
+    { "code": "nl", "name": "Nederlands", "name_en": "Dutch" },
+    { "code": "pl", "name": "Polski", "name_en": "Polish" },
+    { "code": "uk", "name": "Українська", "name_en": "Ukrainian" }
+  ],
+  "source_languages": [
+    { "code": "auto", "name": "自动检测", "name_en": "Auto detect" },
+    { "code": "zh-CN", "name": "简体中文", "name_en": "Chinese (Simplified)" },
+    { "code": "zh-TW", "name": "繁體中文", "name_en": "Chinese (Traditional)" },
+    { "code": "en", "name": "英语", "name_en": "English" },
+    { "code": "ja", "name": "日本語", "name_en": "Japanese" },
+    { "code": "ko", "name": "한국어", "name_en": "Korean" },
+    { "code": "ru", "name": "Русский", "name_en": "Russian" },
+    { "code": "fr", "name": "Français", "name_en": "French" },
+    { "code": "de", "name": "Deutsch", "name_en": "German" },
+    { "code": "es", "name": "Español", "name_en": "Spanish" },
+    { "code": "pt-BR", "name": "Português (Brasil)", "name_en": "Portuguese (Brazil)" },
+    { "code": "it", "name": "Italiano", "name_en": "Italian" },
+    { "code": "ar", "name": "العربية", "name_en": "Arabic" },
+    { "code": "th", "name": "ไทย", "name_en": "Thai" },
+    { "code": "vi", "name": "Tiếng Việt", "name_en": "Vietnamese" },
+    { "code": "id", "name": "Bahasa Indonesia", "name_en": "Indonesian" },
+    { "code": "tr", "name": "Türkçe", "name_en": "Turkish" },
+    { "code": "nl", "name": "Nederlands", "name_en": "Dutch" },
+    { "code": "pl", "name": "Polski", "name_en": "Polish" },
+    { "code": "uk", "name": "Українська", "name_en": "Ukrainian" }
+  ],
+  "sites": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "name_zh": "OpenAI",
+      "endpoint": "https://api.openai.com/v1/chat/completions",
+      "default_model": "gpt-4o-mini",
+      "docs": "https://platform.openai.com/docs/api-reference/chat",
+      "models": [
+        { "id": "gpt-4o-mini", "name": "GPT-4o mini" },
+        { "id": "gpt-4o", "name": "GPT-4o" },
+        { "id": "gpt-4.1-mini", "name": "GPT-4.1 mini" },
+        { "id": "gpt-4.1", "name": "GPT-4.1" },
+        { "id": "o3-mini", "name": "o3-mini" }
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "name_zh": "深度求索",
+      "endpoint": "https://api.deepseek.com/v1/chat/completions",
+      "default_model": "deepseek-chat",
+      "docs": "https://api-docs.deepseek.com/",
+      "models": [
+        { "id": "deepseek-chat", "name": "DeepSeek-V3 (chat)" },
+        { "id": "deepseek-reasoner", "name": "DeepSeek-R1 (reasoner)" }
+      ]
+    },
+    {
+      "id": "moonshot",
+      "name": "Moonshot / Kimi",
+      "name_zh": "月之暗面 Kimi",
+      "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+      "default_model": "moonshot-v1-8k",
+      "docs": "https://platform.moonshot.cn/docs/",
+      "models": [
+        { "id": "moonshot-v1-8k", "name": "moonshot-v1-8k" },
+        { "id": "moonshot-v1-32k", "name": "moonshot-v1-32k" },
+        { "id": "moonshot-v1-128k", "name": "moonshot-v1-128k" }
+      ]
+    },
+    {
+      "id": "zhipu",
+      "name": "Zhipu / GLM",
+      "name_zh": "智谱 GLM",
+      "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+      "default_model": "glm-4-flash",
+      "docs": "https://docs.bigmodel.cn/",
+      "models": [
+        { "id": "glm-4-flash", "name": "GLM-4-Flash (free)" },
+        { "id": "glm-4-air", "name": "GLM-4-Air" },
+        { "id": "glm-4-plus", "name": "GLM-4-Plus" },
+        { "id": "glm-4v-plus", "name": "GLM-4V-Plus (vision)" }
+      ]
+    },
+    {
+      "id": "dashscope",
+      "name": "Alibaba DashScope",
+      "name_zh": "阿里云百炼（兼容模式）",
+      "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "default_model": "qwen-plus",
+      "docs": "https://help.aliyun.com/zh/model-studio/compatibility-of-openai",
+      "models": [
+        { "id": "qwen-turbo", "name": "Qwen-Turbo" },
+        { "id": "qwen-plus", "name": "Qwen-Plus" },
+        { "id": "qwen-max", "name": "Qwen-Max" },
+        { "id": "qwen3-8b", "name": "Qwen3-8B" }
+      ]
+    },
+    {
+      "id": "siliconflow",
+      "name": "SiliconFlow",
+      "name_zh": "硅基流动",
+      "endpoint": "https://api.siliconflow.cn/v1/chat/completions",
+      "default_model": "Qwen/Qwen2.5-7B-Instruct",
+      "docs": "https://docs.siliconflow.cn/",
+      "models": [
+        { "id": "Qwen/Qwen2.5-7B-Instruct", "name": "Qwen2.5-7B-Instruct" },
+        { "id": "Qwen/Qwen2.5-14B-Instruct", "name": "Qwen2.5-14B-Instruct" },
+        { "id": "deepseek-ai/DeepSeek-V3", "name": "DeepSeek-V3" },
+        { "id": "deepseek-ai/DeepSeek-R1", "name": "DeepSeek-R1" },
+        { "id": "THUDM/glm-4-9b-chat", "name": "GLM-4-9B-Chat" }
+      ]
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "name_zh": "OpenRouter",
+      "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+      "default_model": "openai/gpt-4o-mini",
+      "docs": "https://openrouter.ai/docs/api-reference/chat",
+      "models": [
+        { "id": "openai/gpt-4o-mini", "name": "OpenAI GPT-4o mini" },
+        { "id": "anthropic/claude-3.5-haiku", "name": "Anthropic Claude 3.5 Haiku" },
+        { "id": "google/gemini-2.0-flash-001", "name": "Google Gemini 2.0 Flash" },
+        { "id": "meta-llama/llama-3.3-70b-instruct", "name": "Meta Llama 3.3 70B" },
+        { "id": "deepseek/deepseek-chat", "name": "DeepSeek V3" }
+      ]
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "name_zh": "Groq",
+      "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+      "default_model": "llama-3.3-70b-versatile",
+      "docs": "https://console.groq.com/docs/openai",
+      "models": [
+        { "id": "llama-3.3-70b-versatile", "name": "Llama 3.3 70B" },
+        { "id": "llama-3.1-8b-instant", "name": "Llama 3.1 8B Instant" },
+        { "id": "mixtral-8x7b-32768", "name": "Mixtral 8x7B" },
+        { "id": "openai/gpt-oss-120b", "name": "GPT-OSS 120B" }
+      ]
+    },
+    {
+      "id": "ollama-local",
+      "name": "Ollama (local, OpenAI-compatible)",
+      "name_zh": "本机 Ollama（OpenAI 兼容）",
+      "endpoint": "http://127.0.0.1:11434/v1/chat/completions",
+      "default_model": "qwen2.5:3b",
+      "docs": "https://github.com/ollama/ollama/blob/main/docs/openai.md",
+      "models": [
+        { "id": "qwen2.5:3b", "name": "Qwen2.5 3B" },
+        { "id": "qwen2.5:7b", "name": "Qwen2.5 7B" },
+        { "id": "llama3.2:3b", "name": "Llama 3.2 3B" },
+        { "id": "mistral:7b", "name": "Mistral 7B" }
+      ]
+    },
+    {
+      "id": "custom",
+      "name": "Custom (keep typed URL)",
+      "name_zh": "自定义（保留手填网址）",
+      "endpoint": "",
+      "default_model": "",
+      "docs": "",
+      "models": []
+    }
+  ]
+}
